@@ -1,2 +1,15 @@
 .slider {
 }
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+
+  margin: 0 5px !important;
+
+  background-color: rgba(#404040, 0.5);
+
+  &-active {
+    background-color: rgba(#404040, 1);
+  }
+}

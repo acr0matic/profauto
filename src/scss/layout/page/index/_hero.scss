@@ -1,0 +1,117 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+  position: relative;
+  z-index: 2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    height: 50%;
+
+    background: linear-gradient(
+      180deg,
+      rgba(196, 196, 196, 0) 71.78%,
+      rgba(196, 196, 196, 0.29) 99.24%
+    );
+
+    transform: translateY(-80%);
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__content,
+  &__slider {
+    flex-shrink: 0;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__slider {
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 720px;
+    }
+
+    position: relative;
+    z-index: 3;
+    width: 935px;
+
+    &::before,
+    &::after {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
+      content: "";
+      position: absolute;
+      z-index: 100;
+      top: 50%;
+
+      display: none;
+
+      width: 25px;
+      height: 100%;
+
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      left: 0;
+
+      background: linear-gradient(
+        90deg,
+        rgba(#ffffff, 1) 10%,
+        rgba(#ffffff, 0) 100%
+      );
+    }
+
+    &::before {
+      right: 0;
+
+      background: linear-gradient(
+        270deg,
+        rgba(#ffffff, 1) 10%,
+        rgba(#ffffff, 0) 100%
+      );
+    }
+
+    .swiper-pagination {
+      top: 50px;
+      right: 50px;
+      bottom: unset;
+      left: unset;
+
+      width: unset;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin-bottom: 70px;
+  }
+
+  &__picture {
+    @include breakpoint($breakpoint-laptop--medium) {
+      height: 425px;
+    }
+
+    width: 100%;
+    height: 550px;
+  }
+}

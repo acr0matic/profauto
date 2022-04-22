@@ -106,7 +106,81 @@
 
   <!-- Основной контент -->
   <main>
-    <section>
+    <section id="hero">
+      <div class="container">
+        <div class="hero">
+          <div class="hero__content">
+            <h1 class="hero__title section__title page__title">
+              Продажа <span>социальных авто</span>
+              <br>
+              под любые задачи
+            </h1>
+
+            <p class="hero__description section__description">
+              *Автомобили ГАЗ, Mercedes, Renaul, Volkswagen и др.
+            </p>
+
+            <div class="hero__action">
+              <button class="hero__button button button-outline">Оставить заявку</button>
+            </div>
+            <!-- /.hero__action -->
+          </div>
+          <!-- /.hero__content -->
+
+          <div class="hero__slider">
+            <div class="swiper slider-hero">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__picture">
+                    <img class="hero__image image image--contain" src="img/page/index/hero/1.png" alt="">
+                  </div>
+                  <!-- /.hero__picture -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="hero__picture">
+                    <img class="hero__image image image--contain" src="img/page/index/hero/2.png" alt="">
+                  </div>
+                  <!-- /.hero__picture -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="hero__picture">
+                    <img class="hero__image image image--contain" src="img/page/index/hero/3.png" alt="">
+                  </div>
+                  <!-- /.hero__picture -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="hero__picture">
+                    <img class="hero__image image image--contain" src="img/page/index/hero/4.png" alt="">
+                  </div>
+                  <!-- /.hero__picture -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="hero__picture">
+                    <img class="hero__image image image--contain" src="img/page/index/hero/5.png" alt="">
+                  </div>
+                  <!-- /.hero__picture -->
+                </div>
+                <!-- /.swiper-slide -->
+              </div>
+              <!-- /.swiper-wrapper -->
+
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- /.swiper slider-hero -->
+          </div>
+          <!-- /.hero__slider -->
+        </div>
+        <!-- /.hero -->
+      </div>
+      <!-- /.container -->
     </section>
   </main>
 
@@ -118,9 +192,11 @@
   <!-- Скрипты -->
   <!-- build:js js/script.min.js -->
   <script src="scripts/libraries/lazyload.js"></script>
-  <script src="scripts/libraries/lodash.js"></script>
+  <script src="scripts/libraries/swiper.js"></script>
 
-  <script src="scripts/main.js"></script>
+  <script src="scripts/base.js"></script>
+  <script src="scripts/init.js"></script>
+  <script src="scripts/hero.js"></script>
   <!-- endbuild -->
 </body>
 
