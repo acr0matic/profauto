@@ -4,14 +4,22 @@
 
   @media (hover: hover) {
     &:hover {
-      border-color: #ffffff;
-      background-color: #ffffff;
-      color: $color-text__green;
+      border-color: #404040;
+      background-color: #404040;
+      color: $color-text__white;
     }
   }
 
   &--dark {
     border-color: #404040;
     color: $color-text__white;
+
+    @media (hover: hover) {
+      &:hover {
+        border-color: #ffffff;
+        background-color: #ffffff;
+        color: $color-text__green;
+      }
+    }
   }
 }
