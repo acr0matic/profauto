@@ -1,0 +1,17 @@
+.button-outline {
+  border-color: #999999;
+  color: $color-text__black;
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: #ffffff;
+      background-color: #ffffff;
+      color: $color-text__green;
+    }
+  }
+
+  &--dark {
+    border-color: #404040;
+    color: $color-text__white;
+  }
+}
