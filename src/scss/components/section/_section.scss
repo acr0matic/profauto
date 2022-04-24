@@ -7,6 +7,18 @@
     }
 
     margin-bottom: 60px;
+
+    &--highlight {
+      padding: 15px 0;
+    }
+
+    &--hightlight-right {
+      background: linear-gradient(270deg, #404040 0%, rgba(#c4c4c4, 0) 82.47%);
+    }
+
+    &--highlight-center {
+      background: linear-gradient(270deg, #404040 0%, rgba(#c4c4c4, 0) 50.48%);
+    }
   }
 
   &__title {
