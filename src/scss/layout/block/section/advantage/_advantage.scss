@@ -1,0 +1,55 @@
+#advantage {
+}
+
+.advantage {
+  .row > * {
+    @include odd {
+      .advantage__card {
+        background-color: $palette-black;
+      }
+    }
+
+    @include even {
+      .advantage__card {
+        background-color: $palette-green;
+      }
+    }
+  }
+
+  &__card {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding: 12px 20px;
+    }
+
+    height: 100%;
+    padding: 20px 30px;
+
+    color: $color-text__white;
+  }
+
+  &__icon {
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 125px;
+    }
+
+    width: 160px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__title--small;
+    }
+
+    margin-bottom: 12px;
+
+    font-weight: $weight-Medium;
+    font-size: $font-size__title--medium;
+
+    line-height: 1;
+  }
+
+  &__description {
+    font-weight: $weight-Light;
+  }
+}
