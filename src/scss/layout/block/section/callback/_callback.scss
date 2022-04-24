@@ -1,0 +1,35 @@
+#callback {
+  padding: 75px 0;
+
+  background: linear-gradient(180deg, #101010 0%, #404040 100%);
+  background-color: $palette-black;
+  color: $color-text__white;
+}
+
+.callback {
+  &__phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 24px 0;
+
+    background: linear-gradient(178deg, #404040 1.69%, #262626 98.31%);
+    color: $color-text__white;
+    box-shadow: 0 4px 4px rgba(#000000, 0.25);
+
+    font-size: $font-size__text--large;
+  }
+
+  &__map {
+    @include breakpoint($breakpoint-laptop--medium) {
+      height: 450px;
+    }
+
+    width: 100%;
+    height: 550px;
+
+    box-shadow: 10px 10px 10px rgba(#000000, 0.25);
+  }
+}

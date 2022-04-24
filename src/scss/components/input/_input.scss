@@ -1,5 +1,8 @@
 .input {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &--error {
     .input__field {
@@ -27,8 +30,9 @@
     outline: none;
 
     background-color: transparent;
+    color: $color-text__white;
 
-    font-weight: $weight-Medium;
+    font-weight: $weight-Regular;
 
     transition: 0.2s ease;
 
@@ -48,6 +52,9 @@
     position: absolute;
     top: 50%;
     right: 10px;
+
+    width: 16px;
+    height: 16px;
 
     opacity: 0;
     visibility: hidden;
