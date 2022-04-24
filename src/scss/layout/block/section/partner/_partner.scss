@@ -1,0 +1,17 @@
+#partner {
+  .section__header {
+    text-align: center;
+  }
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    @include breakpoint($breakpoint-laptop--medium) {
+      transform: scale(0.7);
+    }
+  }
+}

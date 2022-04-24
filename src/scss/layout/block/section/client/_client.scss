@@ -8,11 +8,17 @@
     justify-content: space-between;
 
     &:not(:last-child) {
+      @include breakpoint($breakpoint-laptop--medium) {
+        margin-bottom: 40px;
+      }
+
       margin-bottom: 80px;
     }
   }
 
   &__logo {
-    height: 100%;
+    @include breakpoint($breakpoint-laptop--medium) {
+      transform: scale(0.7);
+    }
   }
 }
