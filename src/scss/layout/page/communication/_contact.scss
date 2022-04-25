@@ -1,0 +1,22 @@
+#contact {
+  margin-top: 100px;
+}
+
+.contact {
+  &__item {
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    color: $color-text__gray;
+    font-size: $font-size__text--large;
+  }
+
+  &__link {
+    @media (hover: hover) {
+      &:hover {
+        font-weight: $weight-Medium;
+      }
+    }
+  }
+}
