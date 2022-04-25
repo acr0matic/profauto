@@ -19,7 +19,7 @@
     background: linear-gradient(
       180deg,
       rgba(#c4c4c4, 0) 71.78%,
-      rgba(#c4c4c4, 0.3) 99.24%,
+      rgba(#c4c4c4, 0.3) 99.24%
     );
 
     transform: translateY(-80%);
@@ -104,6 +104,34 @@
 
   &__description {
     margin-bottom: 70px;
+  }
+
+  &__action {
+    position: relative;
+    display: inline-flex;
+
+    @media (hover: hover) {
+      &:hover::after {
+        height: 2px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 300%;
+      height: 1px;
+
+      background-color: $palette-black;
+
+      transform: translateY(-50%) rotate(150deg);
+      transform-origin: center left;
+
+      transition: $transition ease;
+    }
   }
 
   &__picture {

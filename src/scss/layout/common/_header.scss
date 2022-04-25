@@ -58,6 +58,12 @@
   &__action {
     position: relative;
 
+    @media (hover: hover) {
+      &:hover::after {
+        height: 2px;
+      }
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -71,6 +77,8 @@
 
       transform: translateY(-50%) rotate(-30deg);
       transform-origin: center left;
+
+      transition: $transition ease;
     }
   }
 

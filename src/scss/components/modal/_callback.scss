@@ -22,5 +22,11 @@
   .modal__link {
     color: $color-text__white;
     font-size: $font-size__text--large;
+
+    @media (hover: hover) {
+      &:hover {
+        font-weight: $weight-Medium;
+      }
+    }
   }
 }

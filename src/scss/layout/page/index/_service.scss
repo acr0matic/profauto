@@ -8,12 +8,28 @@
         padding-right: 30px;
         text-align: right;
       }
+
+      .service__action {
+        @media (hover: hover) {
+          &:hover svg {
+            transform: translateX(-10px);
+          }
+        }
+      }
     }
 
     @include even {
       .service__content {
         padding-left: 30px;
         text-align: left;
+      }
+
+      .service__action {
+        @media (hover: hover) {
+          &:hover svg {
+            transform: translateX(10px);
+          }
+        }
       }
     }
 
@@ -171,9 +187,14 @@
     height: 100%;
 
     background-color: $palette-black;
+    cursor: pointer;
 
     &--green {
       background-color: $palette-green;
+    }
+
+    svg {
+      transition: $transition ease;
     }
   }
 

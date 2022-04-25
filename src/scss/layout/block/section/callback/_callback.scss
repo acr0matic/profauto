@@ -1,13 +1,31 @@
 #callback {
+  position: relative;
   margin-top: 100px;
   padding: 75px 0;
 
   background: linear-gradient(180deg, #101010 0%, #404040 100%);
   background-color: $palette-black;
   color: $color-text__white;
+
+  .section__title {
+    font-weight: $weight-Medium;
+    font-size: $font-size__title--small;
+  }
 }
 
 .callback {
+  &__background {
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 550px;
+    }
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 650px;
+  }
+
   &__phone {
     display: flex;
     align-items: center;
@@ -21,6 +39,15 @@
     box-shadow: 0 4px 4px rgba(#000000, 0.25);
 
     font-size: $font-size__text--large;
+
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: 0 4px 10px rgba(#000000, 0.35);
+        font-weight: $weight-Medium;
+      }
+    }
   }
 
   &__map {
