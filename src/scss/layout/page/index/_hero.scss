@@ -22,6 +22,7 @@
       rgba(#c4c4c4, 0.3) 99.24%
     );
 
+    pointer-events: none;
     transform: translateY(-80%);
   }
 }
@@ -48,45 +49,6 @@
     position: relative;
     z-index: 3;
     width: 935px;
-
-    &::before,
-    &::after {
-      @include breakpoint($breakpoint-tablet) {
-        display: none;
-      }
-
-      content: "";
-      position: absolute;
-      z-index: 100;
-      top: 50%;
-
-      display: none;
-
-      width: 25px;
-      height: 100%;
-
-      transform: translateY(-50%);
-    }
-
-    &::after {
-      left: 0;
-
-      background: linear-gradient(
-        90deg,
-        rgba(#ffffff, 1) 10%,
-        rgba(#ffffff, 0) 100%
-      );
-    }
-
-    &::before {
-      right: 0;
-
-      background: linear-gradient(
-        270deg,
-        rgba(#ffffff, 1) 10%,
-        rgba(#ffffff, 0) 100%
-      );
-    }
 
     .swiper-pagination {
       top: 50px;

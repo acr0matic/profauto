@@ -60,7 +60,7 @@
         <!-- /.col-3 -->
 
         <div class="col-6">
-          <div class="callback__map">
+          <div class="callback__map map">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2ee8c0203e8011213a31527b420f11402ed2094b98b1d44e5451baad578b10f3&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
           </div>
           <!-- /.callback__map -->
