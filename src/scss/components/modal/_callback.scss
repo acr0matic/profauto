@@ -1,0 +1,26 @@
+.modal-callback {
+  .modal__container {
+    max-width: 460px;
+
+    margin-left: auto;
+
+    background-color: $palette-green;
+  }
+
+  .modal__wrapper {
+    padding: 30px 40px 0;
+  }
+
+  .modal__action {
+    margin-top: 30px;
+    padding: 35px 0;
+
+    background: linear-gradient(180deg, #394d39 0%, #273427 100%);
+    text-align: center;
+  }
+
+  .modal__link {
+    color: $color-text__white;
+    font-size: $font-size__text--large;
+  }
+}
