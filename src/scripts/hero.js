@@ -2,8 +2,6 @@ const hero = document.getElementById('hero');
 
 if (hero) {
   new Swiper(hero.querySelector('.slider-hero'), {
-    simulateTouch: false,
-
     speed: 500,
     grabCursor: true,
     spaceBetween: 30,
