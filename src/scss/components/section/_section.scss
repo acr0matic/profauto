@@ -1,6 +1,10 @@
 .section {
   padding-top: 100px;
 
+  &:first-child {
+    padding-top: 180px;
+  }
+
   &__header {
     @include breakpoint($breakpoint-laptop--medium) {
       margin-bottom: 35px;
