@@ -43,7 +43,9 @@
 
   &::after {
     @include breakpoint($breakpoint-laptop--medium) {
-      bottom: -40px;
+      bottom: -43px;
+      left: 590px;
+      transform: rotate(197deg);
     }
 
     bottom: -10px;
