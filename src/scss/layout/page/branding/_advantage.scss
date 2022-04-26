@@ -1,0 +1,33 @@
+main[id="branding"] #advantage {
+}
+
+main[id="branding"] .advantage {
+  &__card {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding: 30px 15px 15px;
+    }
+
+    padding: 40px 25px 25px;
+  }
+
+  &__icon {
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 80px;
+    }
+
+    width: 100px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--large;
+    }
+
+    font-size: $font-size__title--small;
+  }
+
+  &__description {
+    font-size: $font-size__text--small;
+  }
+}

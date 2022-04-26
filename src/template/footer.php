@@ -190,6 +190,7 @@
 <script src="scripts/libraries/imask.js"></script>
 <script src="scripts/libraries/forms.js"></script>
 <script src="scripts/libraries/micromodal.js"></script>
+<script src="scripts/libraries/fslightbox.js"></script>
 
 <script src="scripts/base.js"></script>
 <script src="scripts/init.js"></script>

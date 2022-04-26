@@ -1,0 +1,51 @@
+#branding {
+  .section__header {
+    margin-bottom: 40px;
+  }
+}
+
+.branding {
+  margin-top: 35px;
+  padding: 50px 0 15px;
+
+  background: linear-gradient(90deg, #404040 0%, rgba(#404040, 0) 82.47%);
+
+  &__gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--regular;
+    }
+
+    margin-top: 20px;
+
+    color: #a0a0a0;
+    font-size: $font-size__text--large;
+  }
+
+  &__picture {
+    flex-grow: 1;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(#000000, 0.25);
+
+    @media (hover: hover) {
+      &:hover {
+        .branding__image {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__image {
+    transition: $transition ease;
+  }
+}

@@ -1,4 +1,18 @@
 .list {
   &__item {
+    display: flex;
+    align-items: flex-start;
+
+    &::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+
+      margin-top: 8px;
+      margin-right: 10px;
+
+      border-radius: 50%;
+      background-color: $color-text__black;
+    }
   }
 }
