@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <!-- Базовые мета-теги для поисковиков -->
-  <title>Производство спец. транспорта, социальных автомобилей | ПрофАвто</title>
+  <title><?php echo $the_title; ?></title>
 
   <!-- Иконки для страницы -->
   <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
@@ -28,24 +28,24 @@
   <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
 
   <!-- Метатеги которые выводят информацию о странице в поисковой запрос -->
-  <meta name="description" content="описание не длиннее 155 символов" />
+  <meta name="description" content="<?php echo $the_description; ?>" />
   <meta name="keywords" content="мета-теги, шаблон, html, css, acr0matic" />
 
   <!-- Метатеги для ссылок в социальных сетях -->
   <meta property="og:locale" content="ru_RU" />
-  <meta property="og:title" content="">
-  <meta property="og:description" content="" />
+  <meta property="og:title" content="<?php echo $the_title; ?>">
+  <meta property="og:description" content="<?php echo $the_description; ?>" />
   <meta property="og:image" content="">
 
   <!-- Контролирует поведение поисковых систем при индексации страницы -->
   <meta name="robots" content="index,follow" />
 
   <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
-  <meta name="theme-color" content="#4285f4" />
+  <meta name="theme-color" content="#ffffff" />
 
   <!-- Покраска для iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
 
   <!-- Место для счетков и аналитики -->
 
@@ -63,7 +63,7 @@
     <div class="container">
       <div class="header">
         <div class="header__logo">
-          <a href="">
+          <a href="/">
             <img src="img/logo.svg" alt="" class="logo logo--header">
           </a>
         </div>
@@ -74,19 +74,19 @@
             <nav class="nav nav--header">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link" href="">О компании</a>
+                  <a class="nav__link" href="about.php">О компании</a>
                 </li>
 
                 <li class="nav__item">
-                  <a class="nav__link" href="">Спец. авто</a>
+                  <a class="nav__link" href="/">Спец. авто</a>
                 </li>
 
                 <li class="nav__item">
-                  <a class="nav__link" href="">Услуги</a>
+                  <a class="nav__link" href="branding.php">Услуги</a>
                 </li>
 
                 <li class="nav__item">
-                  <a class="nav__link" href="">Контакты</a>
+                  <a class="nav__link" href="communication.php">Контакты</a>
                 </li>
               </ul>
             </nav>

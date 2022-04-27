@@ -95,6 +95,10 @@
         color: $color-text__white;
       }
 
+      .service__title {
+        color: $color-text__white;
+      }
+
       .service__action svg {
         margin-left: 60px;
       }
@@ -117,6 +121,8 @@
     }
 
     &:nth-child(5) {
+      background-color: $palette-white;
+
       .service__grid {
         @include breakpoint($breakpoint-laptop--medium) {
           grid-template-rows: auto 65px 170px;

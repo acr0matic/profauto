@@ -4,7 +4,9 @@
     <div class="footer">
       <div class="footer__row">
         <div class="footer__logo">
-          <img class="logo logo--footer" src="img/logo.svg" alt="">
+          <a href="/">
+            <img class="logo logo--footer" src="img/logo.svg" alt="">
+          </a>
         </div>
         <!-- /.footer__logo -->
 
@@ -25,23 +27,23 @@
             <nav class="nav nav--footer">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link" href="">О компании</a>
+                  <a class="nav__link" href="about.php">О компании</a>
                 </li>
 
                 <li class="nav__item">
-                  <a class="nav__link" href="">Спец. авто</a>
+                  <a class="nav__link" href="/">Спец. авто</a>
                 </li>
 
                 <li class="nav__item">
-                  <a class="nav__link" href="">Лизинг</a>
+                  <a class="nav__link" href="leasing.php">Лизинг</a>
                 </li>
 
                 <li class="nav__item">
-                  <a class="nav__link" href="">Брендирование транспорта</a>
+                  <a class="nav__link" href="branding.php">Брендирование транспорта</a>
                 </li>
 
                 <li class="nav__item">
-                  <a class="nav__link" href="">Контакты</a>
+                  <a class="nav__link" href="communication.php">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -179,7 +181,6 @@
   <!-- /.modal__overlay -->
 </div>
 <!-- /.modal -->
-
 
 <!-- Скрипты -->
 <!-- build:js js/script.min.js -->
