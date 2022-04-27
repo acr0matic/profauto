@@ -1,3 +1,133 @@
 .dropdown {
+  position: relative;
 
+  &--open {
+    .dropdown__content {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .dropdown__title {
+      font-weight: $weight-Bold;
+    }
+
+    .dropdown__icon {
+      width: 10px;
+      height: 10px;
+
+      &::before,
+      &::after {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    padding-right: 20px;
+
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        .dropdown__title {
+          font-weight: $weight-Bold;
+        }
+
+        .dropdown__icon {
+          width: 10px;
+          height: 10px;
+
+          &::before,
+          &::after {
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          &::before {
+            left: 0;
+          }
+
+          &::after {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__icon,
+  &__icon::before,
+  &__icon::after {
+    display: block;
+    flex-shrink: 0;
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+    background-color: $palette-black;
+
+    transition: $transition ease;
+  }
+
+  &__icon::before,
+  &__icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    transform: translateY(-25%);
+
+    &::before {
+      left: -8px;
+    }
+
+    &::after {
+      right: -8px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 45px;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: $transition ease;
+  }
+
+  &__item {
+    width: fit-content;
+    padding: 5px 18px;
+    border: 1px solid $palette-black;
+
+    background-color: $palette-white;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
 }

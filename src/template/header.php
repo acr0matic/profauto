@@ -82,7 +82,25 @@
                 </li>
 
                 <li class="nav__item">
-                  <a class="nav__link" href="branding.php">Услуги</a>
+                  <div class="dropdown">
+                    <div class="dropdown__header">
+                      <span class="dropdown__title nav__link">Услуги</span>
+                      <span class="dropdown__icon"></span>
+                    </div>
+                    <div class="dropdown__content">
+                      <div class="dropdown__item">
+                        <a href="leasing.php" class="nav__link">Лизинг</a>
+                      </div>
+                      <!-- /.dropdown__item -->
+
+                      <div class="dropdown__item">
+                        <a href="branding.php" class="nav__link">Брендирование транспорта</a>
+                      </div>
+                      <!-- /.dropdown__item -->
+                    </div>
+                    <!-- /.dropdown__content -->
+                  </div>
+                  <!-- /.dropdown -->
                 </li>
 
                 <li class="nav__item">
