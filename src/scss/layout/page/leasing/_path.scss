@@ -1,0 +1,94 @@
+#path {
+}
+
+.path {
+  position: relative;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    &:last-child {
+      @include breakpoint($breakpoint-laptop--medium) {
+        margin-top: 65px;
+      }
+
+      justify-content: center;
+      margin-top: 100px;
+    }
+  }
+
+  &__background {
+    @include breakpoint($breakpoint-laptop--medium) {
+      right: -76px;
+      transform: scale(0.93) translateY(-50%);
+    }
+
+    position: absolute;
+    top: 50%;
+    right: -73px;
+
+    transform: translateY(-50%);
+  }
+
+  &__card {
+    @include even {
+      background-color: $palette-green;
+    }
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 250px;
+      height: 185px;
+    }
+
+    position: relative;
+    flex-shrink: 0;
+
+    width: 315px;
+    height: 220px;
+    padding: 8px 12px;
+
+    background-color: $palette-black;
+    color: $color-text__white;
+
+    &::after {
+      @include breakpoint($breakpoint-laptop--medium) {
+        right: -60px;
+        transform: scale(0.75);
+      }
+
+      position: absolute;
+      top: 50%;
+      right: -75px;
+
+      transform: translateY(-50%);
+    }
+
+    &:not(:last-child) {
+      @include breakpoint($breakpoint-laptop--medium) {
+        margin-right: 60px;
+      }
+
+      margin-right: 90px;
+
+      &::after {
+        content: url("../img/page/leasing/path/arrow.svg");
+      }
+    }
+  }
+
+  &__num {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 8px;
+      font-size: 30px;
+    }
+
+    margin-bottom: 15px;
+
+    font-weight: $weight-ExtraBold;
+    font-size: 40px;
+  }
+
+  &__text {
+  }
+}

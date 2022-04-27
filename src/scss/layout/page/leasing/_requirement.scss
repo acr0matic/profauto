@@ -1,0 +1,60 @@
+#requirement {
+  .section__header {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 25px;
+    }
+
+    margin-bottom: 30px;
+  }
+
+  .section__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: 22px;
+    }
+
+    font-weight: $weight-Medium;
+    font-size: $font-size__title--small;
+  }
+}
+
+.requirement {
+  &__action {
+    position: relative;
+    display: inline-flex;
+
+    margin-top: 50px;
+
+    @media (hover: hover) {
+      &:hover::after {
+        height: 2px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 300%;
+      height: 1px;
+
+      background-color: $palette-black;
+
+      transform: translateY(-50%) rotate(210deg);
+      transform-origin: center left;
+
+      transition: $transition ease;
+    }
+  }
+
+  .button {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
