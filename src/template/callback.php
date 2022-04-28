@@ -10,7 +10,7 @@
           </div>
           <!-- /.section__header -->
 
-          <form action="" class="callback__form form form-callback mb-4">
+          <form action="php/mail.php" data-target="callback" class="callback__form form form-callback mb-4">
             <label class="input mb-3">
               <span class="input__label">Имя</span>
               <div class="input__wrapper">

@@ -139,14 +139,9 @@ class Form {
   // Функция: Отправляем письмо
   async Send() {
     const data = new FormData(this.form);
-
     const target = this.form.getAttribute('data-target');
-    const additional = this.form.getAttribute('data-additional');
-    const subject = this.form.getAttribute('data-subject');
 
     data.append('target', target);
-    if (additional) data.append('additional', additional);
-    if (subject) data.append('subject', subject);
 
     // for (var pair of data.entries()) {
     //   console.log(pair[0]+ ', ' + pair[1]);
@@ -166,7 +161,7 @@ class Form {
 
         setTimeout(() => {
           MicroModal.close('modal-success', modalParams);
-        }, 3000);
+        }, 2000);
       }
 
       let result = await response.json();
