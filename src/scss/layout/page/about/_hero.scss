@@ -1,11 +1,12 @@
 main[id="about"] #hero {
   @include breakpoint($breakpoint-laptop--medium) {
     margin-top: 60px;
+    padding-bottom: 30px;
   }
 
   margin-top: 90px;
 
-  &::after {
+  &::before {
     top: initial;
     bottom: 0;
 

@@ -12,6 +12,8 @@
     }
 
     .dropdown__icon {
+      top: 40%;
+
       width: 10px;
       height: 10px;
 
@@ -47,6 +49,8 @@
         }
 
         .dropdown__icon {
+          top: 40%;
+
           width: 10px;
           height: 10px;
 
@@ -93,10 +97,8 @@
 
   &__icon {
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 0;
-
-    transform: translateY(-25%);
 
     &::before {
       left: -8px;

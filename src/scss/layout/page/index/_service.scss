@@ -2,10 +2,26 @@
 }
 
 .service {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: -20%;
+    right: 0;
+
+    width: 1px;
+    height: 1000px;
+
+    background-color: $palette-black;
+  }
+
   &__row {
     @include odd {
       .service__content {
         padding-right: 30px;
+        padding-left: 10px;
         text-align: right;
       }
 
@@ -20,6 +36,7 @@
 
     @include even {
       .service__content {
+        padding-right: 10px;
         padding-left: 30px;
         text-align: left;
       }

@@ -2,11 +2,26 @@
 // Фрагмент стилизации какой-то секции
 // -----------------------------------------------------------------------------
 
+main[id="home"] .hero {
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: -100%;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $palette-white;
+  }
+}
+
 #hero {
   position: relative;
   z-index: 2;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     z-index: 1;
@@ -23,11 +38,13 @@
     );
 
     pointer-events: none;
-    transform: translateY(-80%);
+    transform: translateY(-60%);
   }
 }
 
 .hero {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +60,7 @@
 
   &__slider {
     @include breakpoint($breakpoint-laptop--medium) {
-      width: 720px;
+      width: 700px;
     }
 
     position: relative;

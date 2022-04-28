@@ -20,13 +20,13 @@
 
   &__background {
     @include breakpoint($breakpoint-laptop--medium) {
-      right: -76px;
-      transform: scale(0.93) translateY(-50%);
+      right: -75px;
+      transform: scale(0.95) translateY(-50%);
     }
 
     position: absolute;
     top: 50%;
-    right: -73px;
+    right: -90px;
 
     transform: translateY(-50%);
   }

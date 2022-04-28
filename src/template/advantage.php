@@ -12,7 +12,7 @@
             <img class="advantage__icon" src="img/section/advantages/1.svg" alt="">
             <h3 class="advantage__title">Опыт</h3>
             <p class="advantage__description">
-              Долголётная работа
+              Долголетная работа
               в нашей сфере
             </p>
           </div>

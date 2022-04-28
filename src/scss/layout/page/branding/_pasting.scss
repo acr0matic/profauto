@@ -35,23 +35,16 @@
     overflow: hidden;
     box-shadow: 2px 2px 4px rgba(#000000, 0.25);
 
+    transition: $transition ease;
+
     @media (hover: hover) {
       &:hover {
-        .pasting__image {
-          transform: scale(1.1);
-        }
+        transform: translateY(-5px);
       }
     }
 
     &:not(:last-child) {
       margin-right: 20px;
     }
-  }
-
-  &__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: $transition ease;
   }
 }

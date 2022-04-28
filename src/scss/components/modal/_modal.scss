@@ -75,17 +75,17 @@ $transition-time: 0.2s;
 }
 
 .micromodal-slide[aria-hidden="false"] .modal__overlay {
-  animation: fade-in 0.4s cubic-bezier(0, 0, 0.2, 1);
+  animation: fade-in 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden="false"] .modal__container {
-  animation: slide-in 0.4s cubic-bezier(0, 0, 0.2, 1);
+  animation: slide-in 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden="true"] .modal__overlay {
-  animation: fade-out 0.4s cubic-bezier(0, 0, 0.2, 1);
+  animation: fade-out 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden="true"] .modal__container {
-  animation: slide-out 0.4s cubic-bezier(0, 0, 0.2, 1);
+  animation: slide-out 0.3s cubic-bezier(0, 0, 0.2, 1);
 }

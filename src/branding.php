@@ -181,25 +181,25 @@
         <div class="branding__gallery">
           <picture class="branding__picture">
             <a data-fslightbox="branding" href="img/page/branding/branding/1.jpg">
-              <img src="img/page/branding/branding/thumb/1.jpg" alt="" class="branding__image">
+              <img src="img/page/branding/branding/thumb/1.jpg" alt="" class="branding__image image">
             </a>
           </picture>
 
           <picture class="branding__picture">
             <a data-fslightbox="branding" href="img/page/branding/branding/2.jpg">
-              <img src="img/page/branding/branding/thumb/2.jpg" alt="" class="branding__image">
+              <img src="img/page/branding/branding/thumb/2.jpg" alt="" class="branding__image image">
             </a>
           </picture>
 
           <picture class="branding__picture">
             <a data-fslightbox="branding" href="img/page/branding/branding/3.jpg">
-              <img src="img/page/branding/branding/thumb/3.jpg" alt="" class="branding__image">
+              <img src="img/page/branding/branding/thumb/3.jpg" alt="" class="branding__image image">
             </a>
           </picture>
 
           <picture class="branding__picture">
             <a data-fslightbox="branding" href="img/page/branding/branding/4.jpg">
-              <img src="img/page/branding/branding/thumb/4.jpg" alt="" class="branding__image">
+              <img src="img/page/branding/branding/thumb/4.jpg" alt="" class="branding__image image">
             </a>
           </picture>
         </div>
@@ -257,7 +257,7 @@
               <img class="advantage__icon" src="img/page/branding/advantage/3.svg" alt="">
               <h3 class="advantage__title">25 170 кв.м.</h3>
               <p class="advantage__description">
-                плёнки израсходовано в
+                Плёнки израсходовано в
                 <br>
                 2021 г.
               </p>
